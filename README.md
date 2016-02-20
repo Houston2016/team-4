@@ -1,0 +1,1 @@
+Our app empowers communities through their devices. It integrates Neighborhood Center mats.
