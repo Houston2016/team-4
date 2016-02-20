@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    {% load staticfiles %}
     <script>
         // This is called with the results from from FB.getLoginStatus().
         function statusChangeCallback(response) {
@@ -89,14 +87,28 @@
     <meta name="theme-color" content="#2196F3">
     <title>Neighborhood Centers</title>
 
+    {% load staticfiles %}
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">-->
+
+    <!--&lt;!&ndash; Compiled and minified JavaScript &ndash;&gt;-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
     <!-- CSS  -->
-    <link href="{% static 'www/min/plugin-min.css' %}" type="text/css" rel="stylesheet">
+    <!--<link href='Neighborhoods/static_in_pro/our_static/www/min/plugin-min.css' type="text/css" rel="stylesheet">-->
+    <link href= "{% static "www/min/plugin-min.css" %}" type="text/css" rel="stylesheet">
     <link href= "{% static 'www/min/custom-min.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'www/css/materialize.css' %}" type="text/css" rel="stylesheet">
 </head>
 
 <body id="top" class="scrollspy">
+    <!--  Scripts-->
+    <script type="text/javascript" src="{% static 'www/min/plugin-min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/min/custom-min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/js/materialize.js' %}"></script>
 
+    <div class="fb-login-button" data-max-rows="1" data-size="small"
+         data-show-faces="false" data-auto-logout-link="true">
+    </div>
     <!-- Pre Loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -464,12 +476,6 @@
             </div>
         </div>
     </footer>
-
-    <!--  Scripts-->
-    <script src="{% static 'www/min/plugin-min.js' %}"></script>
-    <script src="{% static 'www/min/custom-min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'www/js/materialize.js' %}"></script>
-
 
 </body>
 </html>
