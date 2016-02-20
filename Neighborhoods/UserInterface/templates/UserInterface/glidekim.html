@@ -291,7 +291,7 @@
         var j = 5;
 
         while (j>0) {
-            for (i={{ min_id_num }}; i<Object.keys(cardInfo).length; i++) {
+            for (i=0; i<Object.keys(cardInfo).length; i++) {
                 if (cardInfo[i]["rating"] == j) {
                     containerString = "<div class='OrderingField' rating='" +cardInfo[i]["rating"]+ "' id='" +i+ "'><div class='LeftFloat'><p> "
                     + cardInfo[i]["title"]
