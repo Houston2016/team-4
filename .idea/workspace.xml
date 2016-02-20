@@ -39,12 +39,23 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="glidekim.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/glidekim.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.8983957">
               <caret line="275" column="23" selection-start-line="275" selection-start-column="23" selection-end-line="275" selection-end-column="23" />
               <folding />
+=======
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Neighborhoods/Results/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26298702">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+>>>>>>> abhijeet2
             </state>
           </provider>
         </entry>
@@ -52,8 +63,57 @@
       <file leaf-file-name="mats_render.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/mats_render.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding />
+=======
+            <state vertical-scroll-proportion="-27.75">
+              <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+              <folding>
+                <marker date="1455954927759" expanded="true" signature="46:1037" placeholder="..." />
+                <marker date="1455954927759" expanded="true" signature="51:296" placeholder="&quot;&quot;&quot;Takes the input json data and turns into readable data for averaging function...&quot;&quot;&quot;" />
+                <marker date="1455954927759" expanded="true" signature="1379:2189" placeholder="..." />
+                <marker date="1455954927759" expanded="true" signature="1384:1751" placeholder="&quot;&quot;&quot;Sorts the data so that it can be visualized...&quot;&quot;&quot;" />
+              </folding>
+>>>>>>> abhijeet2
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+=======
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Neighborhoods/Ranking/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> abhijeet2
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -63,20 +123,9 @@
         <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+>>>>>>> abhijeet2
             </state>
           </provider>
         </entry>
@@ -101,7 +150,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="avery" />
+=======
+        <entry key="$PROJECT_DIR$" value="master" />
+>>>>>>> abhijeet2
       </map>
     </option>
   </component>
@@ -123,6 +176,7 @@
         <option value="$PROJECT_DIR$/Processing/processing.py" />
         <option value="$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/mats_view.html" />
         <option value="$PROJECT_DIR$/Neighborhoods/Neighborhoods/settings.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/mats_render.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Neighborhoods/UserInterface/urls.py" />
@@ -130,6 +184,10 @@
         <option value="$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/drag_and_drop.html" />
         <option value="$PROJECT_DIR$/Neighborhoods/UserInterface/views.py" />
         <option value="$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/glidekim.html" />
+=======
+        <option value="$PROJECT_DIR$/Processing/processing.py" />
+        <option value="$PROJECT_DIR$/Neighborhoods/Results/views.py" />
+>>>>>>> abhijeet2
       </list>
     </option>
   </component>
@@ -652,13 +710,35 @@
       <option name="project" value="LOCAL" />
       <updated>1455962461364</updated>
     </task>
+<<<<<<< HEAD
+=======
+    <task id="LOCAL-00014" summary="Resolved Conflict">
+      <created>1455954860482</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1455954860482</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated Presentation">
+      <created>1455966255776</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1455966255776</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Resolving Conflict">
+      <created>1455966447797</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1455966447797</updated>
+    </task>
+>>>>>>> abhijeet2
     <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1055" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.48931623" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -668,6 +748,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.51964283" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.48035714" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26014957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4871795" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.5224359" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.4775641" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> abhijeet2
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@team-4" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -722,10 +814,21 @@
     <MESSAGE value="fixing merge issues" />
     <MESSAGE value="fixed static files issues&#10;" />
     <MESSAGE value="added new front end work" />
+<<<<<<< HEAD
     <MESSAGE value="Revised merge errors" />
     <MESSAGE value="&#10;" />
     <MESSAGE value="resolved git ignore" />
     <option name="LAST_COMMIT_MESSAGE" value="resolved git ignore" />
+=======
+    <MESSAGE value="Added process data function" />
+    <MESSAGE value="Added gather_mats function" />
+    <MESSAGE value="Fixed gather_mats filter field" />
+    <MESSAGE value="Started Presentation" />
+    <MESSAGE value="Resolved Conflict" />
+    <MESSAGE value="Updated Presentation" />
+    <MESSAGE value="Resolving Conflict" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolving Conflict" />
+>>>>>>> abhijeet2
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -971,6 +1074,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Neighborhoods/Results/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11029412">
@@ -979,6 +1083,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Processing/processing.py">
+=======
+    <entry file="file://$PROJECT_DIR$/Neighborhoods/Results/tests.py">
+>>>>>>> abhijeet2
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
@@ -1077,16 +1184,34 @@
     <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/templates/UserInterface/drag_and_drop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
+=======
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+>>>>>>> abhijeet2
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
+=======
+        <state vertical-scroll-proportion="-27.75">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+          <folding>
+            <marker date="1455954927759" expanded="true" signature="46:1037" placeholder="..." />
+            <marker date="1455954927759" expanded="true" signature="51:296" placeholder="&quot;&quot;&quot;Takes the input json data and turns into readable data for averaging function...&quot;&quot;&quot;" />
+            <marker date="1455954927759" expanded="true" signature="1379:2189" placeholder="..." />
+            <marker date="1455954927759" expanded="true" signature="1384:1751" placeholder="&quot;&quot;&quot;Sorts the data so that it can be visualized...&quot;&quot;&quot;" />
+          </folding>
+>>>>>>> abhijeet2
         </state>
       </provider>
     </entry>
@@ -1103,6 +1228,32 @@
         <state vertical-scroll-proportion="0.8983957">
           <caret line="275" column="23" selection-start-line="275" selection-start-column="23" selection-end-line="275" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Neighborhoods/UserInterface/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Neighborhoods/Results/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26298702">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
