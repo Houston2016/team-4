@@ -1,4 +1,5 @@
 import collections
+from Ranking import models
 
 def card_rank(input_json):
     '''
@@ -12,33 +13,40 @@ def card_rank(input_json):
     mat_data = {}
 
     #Initialize all of the mat dictionaries
-    for user in input_json.keys():
-        print 'user: ', user
-        mat_dict = input_json[user]
+    for idx in range(input_json['submissions']):
+        # print 'user: ', user
+        # mat_dict = input_json[user]
 
-        for mat in mat_dict.keys():
+        # for card_val in submission:
             # print 'Mat: ', mat
-            mat_data[mat] = collections.defaultdict(list)
+        mat_data[idx] = collections.defaultdict(list)
 
     #Reorganize data into output dictionary
-    for user in input_json.keys():
-        print 'user: ', user
-        mat_dict = input_json[user]
-
-        for mat in mat_dict.keys():
-            print 'Mat: ', mat
-            card_dict = mat_dict[mat]
-
+    for idx in range(input_json['submissions']):
+        # print 'user: ', user
+        # mat_dict = input_json[user]
+        #
+        # for mat in mat_dict.keys():
+        #     print 'Mat: ', mat
+        #     card_dict = mat_dict[mat]
+        submission = input_json['submissions'][idx]
             #collect ranks for each card
-            for card in card_dict.keys():
-                mat_data[mat][card].append(card_dict[card])
+        for card_val in submission:
+            for card in card_val.keys():
+                mat_data[idx][card].append(card_val[card])
 
     return mat_data
 
 #Testing
-input_json = {'user1': {'mat1': {'card1': 1, 'card2': 2}, 'mat2': {'card4': 4, 'card5': 5}},
-              'user2': {'mat1': {'card1': 3, 'card2': 2}, 'mat2': {'card4': 3, 'card5': 4}},
-              'user3': {'mat1': {'card1': 2, 'card2': 3}, 'mat2': {'card4': 5, 'card5': 3}}}
+input_json = {"themes": ["Robotics", "Sewing", "Commercial Kitchen", "Place to make new products", "Woodworking",
+                         "Focus on future tools", "Inter-age activities", "tools", "Quite Classroom", "Machinery",
+                         "Metalworking", "Different short classes", "Art Space", "Focus on youth", "Shared knowledge",
+                         "Electronics", "Skilled tutors", "Computer Skills", "Jewelery making"],
+              "submissions": [[{"Robotics": 4}, {"Sewing": 5}, {"Commercial Kitchen": 1}, {"Place to make new products": 4},
+                               {"Woodworking": 2}, {"Focus on future tools": 3}, {"Inter-age activities": 4}, {"tools": 3},
+                               {"Quite Classroom": 5}, {"Machinery": 3}, {"Metalworking": 3}, {"Different short classes": 3}, {"Art Space": 2}, {"Focus on youth": 2}, {"Shared knowledge": 1}, {"Electronics": 2}, {"Skilled tutors": 4}, {"Computer Skills": 3}, {"Jewelery making": 3}], [{"Robotics": 2}, {"Sewing": 2}, {"Commercial Kitchen": 3}, {"Place to make new products": 1}, {"Woodworking": 1}, {"Focus on future tools": 2}, {"Inter-age activities": 4}, {"tools": 3}, {"Quite Classroom": 4}, {"Machinery": 4}, {"Metalworking": 3}, {"Different short classes": 3}, {"Art Space": 3}, {"Focus on youth": 3}, {"Shared knowledge": 5}, {"Electronics": 4}, {"Skilled tutors": 2}, {"Computer Skills": 5}, {"Jewelery making": 3}], [{"Robotics": 4}, {"Sewing": 2}, {"Commercial Kitchen": 3}, {"Place to make new products": 3}, {"Woodworking": 4}, {"Focus on future tools": 3}, {"Inter-age activities": 5}, {"tools": 4}, {"Quite Classroom": 2}, {"Machinery": 3}, {"Metalworking": 1}, {"Different short classes": 3}, {"Art Space": 5}, {"Focus on youth": 2}, {"Shared knowledge": 3}, {"Electronics": 2}, {"Skilled tutors": 3}, {"Computer Skills": 1}, {"Jewelery making": 4}], [{"Robotics": 5}, {"Sewing": 2}, {"Commercial Kitchen": 4}, {"Place to make new products": 3}, {"Woodworking": 2}, {"Focus on future tools": 3}, {"Inter-age activities": 3}, {"tools": 4}, {"Quite Classroom": 2}, {"Machinery": 3}, {"Metalworking":4}, {"Different short classes": 3}, {"Art Space": 4}, {"Focus on youth": 3}, {"Shared knowledge": 5}, {"Electronics": 2}, {"Skilled tutors": 1}, {"Computer Skills": 1}, {"Jewelery making": 3}], [{"Robotics": 2}, {"Sewing": 3}, {"Commercial Kitchen": 4}, {"Place to make new products": 3}, {"Woodworking": 3}, {"Focus on future tools": 4}, {"Inter-age activities": 5}, {"tools": 2}, {"Quite Classroom": 3}, {"Machinery": 4}, {"Metalworking": 1}, {"Different short classes": 1}, {"Art Space": 2}, {"Focus on youth": 4}, {"Shared knowledge": 3}, {"Electronics": 5}, {"Skilled tutors": 3}, {"Computer Skills": 2}, {"Jewelery making": 3}], [{"Robotics": 3}, {"Sewing": 4}, {"Commercial Kitchen": 4}, {"Place to make new products": 3}, {"Woodworking": 4}, {"Focus on future tools": 5}, {"Inter-age activities": 2}, {"tools": 3}, {"Quite Classroom": 2}, {"Machinery": 3}, {"Metalworking": 2}, {"Different short classes": 1}, {"Art Space": 3}, {"Focus on youth": 2}, {"Shared knowledge": 3}, {"Electronics": 1}, {"Skilled tutors": 4}, {"Computer Skills": 5}, {"Jewelery making": 3}], [{"Robotics": 3}, {"Sewing": 1}, {"Commercial Kitchen": 3}, {"Place to make new products": 3}, {"Woodworking": 4}, {"Focus on future tools": 4}, {"Inter-age activities": 2}, {"tools": 5}, {"Quite Classroom": 4}, {"Machinery": 4}, {"Metalworking": 3}, {"Different short classes": 2}, {"Art Space": 2}, {"Focus on youth": 1}, {"Shared knowledge": 2}, {"Electronics": 5}, {"Skilled tutors": 3}, {"Computer Skills": 3}, {"Jewelery making":3}], [{"Robotics": 3}, {"Sewing": 2}, {"Commercial Kitchen": 3}, {"Place to make new products": 5}, {"Woodworking": 2}, {"Focus on future tools": 4}, {"Inter-age activities": 1}, {"tools": 4}, {"Quite Classroom": 3}, {"Machinery": 1}, {"Metalworking": 5}, {"Different short classes": 3}, {"Art Space": 4}, {"Focus on youth": 3}, {"Shared knowledge": 2}, {"Electronics": 2}, {"Skilled tutors": 3}, {"Computer Skills": 3}, {"Jewelerymaking": 4}], [{"Robotics": 4}, {"Sewing": 3}, {"Commercial Kitchen": 3}, {"Place to make new products": 3}, {"Woodworking": 3}, {"Focus on future tools": 5}, {"Inter-age activities": 4}, {"tools": 2}, {"Quite Classroom": 3}, {"Machinery": 4}, {"Metalworking": 1}, {"Different short classes": 2}, {"Art Space": 3}, {"Focus on youth": 1}, {"Shared knowledge": 3}, {"Electronics": 4}, {"Skilled tutors": 2}, {"Computer Skills": 2}, {"Jewelery making": 5}], [{"Robotics": 2}, {"Sewing": 3}, {"Commercial Kitchen": 3}, {"Place to make new products": 5}, {"Woodworking": 2}, {"Focus on future tools": 5}, {"Inter-age activities": 3}, {"tools": 4}, {"Quite Classroom": 4}, {"Machinery": 3}, {"Metalworking": 4}, {"Different short classes": 3}, {"Art Space": 2}, {"Focus on youth": 3}, {"Shared knowledge": 1}, {"Electronics": 3}, {"Skilled tutors": 4}, {"Computer Skills": 2}, {"Jewelery making": 1}]], "description": "Let us make things together", "title": "Maker Space"}
+
+
 
 print card_rank(input_json)
 
