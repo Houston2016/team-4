@@ -129,5 +129,5 @@ STATIC_URL = '/static_in_pro/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_in_pro', 'static_root')
 
 STATIC_FILES_DIRS = [
-    os.path.join(BASE_DIR, "static_in_pro", 'our_static'),
+    os.path.join(BASE_DIR, 'static_in_pro', 'our_static'),
 ]

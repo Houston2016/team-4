@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Preferences</title>
+    {% load staticfiles %}
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
 </head>
 <body>
-
+  <nav>
+  <div class ="container">
+    <div class="nav-wrapper">
+      <a class="brand-logo">What do you think?</a>
+    </div>
+  </div>
+  </nav>
+{% block drag_and_drop %} {% endblock %}
 </body>
 </html>
 
