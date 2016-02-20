@@ -44,7 +44,7 @@ class MatteModel(models.Model):
         return dict(json_resp)
 
     def get_themes(self):
-        return [theme.name for theme in self.themes.all()]
+        return list(self.themes.all())
 
     def get_submissions(self):
         everything = []
