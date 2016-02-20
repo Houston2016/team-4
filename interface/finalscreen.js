@@ -33,4 +33,6 @@ function click() {
     });
 }
 
-function features()
+function features(cards, labels){
+       
+}
