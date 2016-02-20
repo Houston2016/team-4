@@ -3,11 +3,38 @@ import collections
 
 def card_rank(input_json):
 
-    card_ranks = collections.defaultdict(list)
+    #Initialize output variables
+    mat_data = {}
+
+    #Initialize all of the mat dictionaries
     for user in input_json.keys():
+        print 'user: ', user
         mat_dict = input_json[user]
+
         for mat in mat_dict.keys():
+            # print 'Mat: ', mat
+            mat_data[mat] = collections.defaultdict(list)
+
+    #Reorganize data into output dictionary
+    for user in input_json.keys():
+        print 'user: ', user
+        mat_dict = input_json[user]
+
+        for mat in mat_dict.keys():
+            print 'Mat: ', mat
             card_dict = mat_dict[mat]
+
+            #collect ranks for each card
             for card in card_dict.keys():
-                card_ranks[card].append(card_dict[card])
+                mat_data[mat][card].append(card_dict[card])
+
+    return mat_data
+
+#Testing
+input_json = {'user1': {'mat1': {'card1': 1, 'card2': 2}, 'mat2': {'card4': 4, 'card5': 5}},
+              'user2': {'mat1': {'card1': 3, 'card2': 2}, 'mat2': {'card4': 3, 'card5': 4}},
+              'user3': {'mat1': {'card1': 2, 'card2': 3}, 'mat2': {'card4': 5, 'card5': 3}}}
+
+print card_rank(input_json)
+
 
