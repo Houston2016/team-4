@@ -1,1 +1,4 @@
 .idea/*
+.idea/workspace.xml
+/Neighborhoods/db.sqlite3
+*.pyc
