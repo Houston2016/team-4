@@ -1,0 +1,32 @@
+.LeftFloat
+{
+    float: left
+}
+.RightFloat
+{
+    float: right
+}
+
+.FieldContainer
+{
+    border: 1px solid black;
+    width: 400px;
+
+    overflow-y: auto;
+    font-family:tahoma;
+}
+ .OrderingField
+{
+    margin: 3px;
+    border: 1px solid #0da3fd;
+    background-color: #e8efff;
+    height: 50px;
+}
+.OrderingField div.Commands
+{
+    width: 60px;
+}
+button
+{
+    width: 60px;
+}

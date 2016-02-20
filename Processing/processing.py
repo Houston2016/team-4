@@ -78,4 +78,3 @@ print sort_data(test)
 #     card_ranks = card_rank(mats)
 #     avg_ranks = sort_data(card_ranks)
 #     return avg_ranks
-
