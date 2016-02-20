@@ -14,3 +14,7 @@ def preferences(request):
     print card_list
     return render(request, 'UserInterface/glidekim.html', context)
 
+def submit_process(request):
+    return render(request, 'UserInterface/finalscreen.html')
+    # if request.method == 'POST':
+    #     request.POST['page_data']
