@@ -2,6 +2,12 @@ import json
 import collections
 
 def card_rank(input_json):
+    '''
+    Takes the input json data and turns into readable data for averaging function
+
+    :param input_json: the input json from when the cards are sorted
+    :return: a dictionary of mats mapped to each cards mapped to list of rankings
+    '''
 
     #Initialize output variables
     mat_data = {}
@@ -16,7 +22,7 @@ def card_rank(input_json):
             mat_data[mat] = collections.defaultdict(list)
 
     #Reorganize data into output dictionary
-    for user in input_json.keys():
+    for user in input_json.keys()
         print 'user: ', user
         mat_dict = input_json[user]
 
