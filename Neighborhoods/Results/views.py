@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from Ranking.models
 
 def results(request):
     return render(request, 'Results/visualization.html')
 
 def gather_mat():
-    return MattModel.object.filter(submissions)
+    return MatteModel.object.filter(submissions)
 
