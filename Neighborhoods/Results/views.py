@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from Ranking.models
+from Ranking.models import MatteModel
 
 def results(request):
-    return render(request, 'Results/visualization.html')
+    requested_model = MatteModel.objects.filter(title="Maker Space")
+    context = {'workspace': requested_model}
+    return render(request, 'Results/visualization.html', context)
 
 def gather_mat():
-    return MatteModel.object.filter(submissions)
+    return MatteModel.objects.all()
 
