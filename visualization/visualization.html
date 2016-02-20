@@ -1,0 +1,60 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+<script type="text/javascript">
+
+function parseData() {
+    var data = [[6, 5.0], [17, 4.0], [13, 3.6], [12, 3.3], [5, 2.7], [4, 2.4], [18, 2.0]];  // This should be an input later
+
+    var category_lst = [];
+    var series_lst = [];
+
+    for (var i=0; i < data.length; i++) {
+        category_lst.push(data[i][0]);
+        series_lst.push(data[i][1]);
+    }
+
+
+    $(function () { 
+        $('#container').highcharts({
+            chart: {
+                type: 'bar',
+                width: 400
+            },
+            title: {
+                text: 'Avg Scores for Each Card'
+            },
+            xAxis: {
+                categories: category_lst,
+                title: {
+                    text: 'Card Id'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Avg Score'
+                },
+                max: 5,
+                gridLineWidth: 0,
+                opposite: 'True'
+            },
+            series: [{
+                data: series_lst
+            }]
+        });
+    });
+}
+
+</script>
+
+</head>
+<body>
+
+<div id="container"></div>
+<button onclick="parseData()">Print the graph from input data</button>
+
+</body>
+</html>
