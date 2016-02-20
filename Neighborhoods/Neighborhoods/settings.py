@@ -31,6 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'AdminUpload.apps.AdminuploadConfig',
+    'Authentication.apps.AuthenticationConfig',
+    'LandingPage.apps.LandingpageConfig',
+    'Ranking.apps.RankingConfig',
+    'UserInterface.apps.UserinterfaceConfig',
+    'Results.apps.ResultsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
