@@ -73,3 +73,9 @@ def sort_data(data):
 test = {"123123": {"1": [1,2,3,4], "2":[5,5,5,5], "3":[1,1,1,2]}}
 print sort_data(test)
 
+# def process_data():
+#     mats = gather_mats()
+#     card_ranks = card_rank(mats)
+#     avg_ranks = sort_data(card_ranks)
+#     return avg_ranks
+
