@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def upload_view(request):
+    return render(request, 'AdminUpload/upload_view.html')
