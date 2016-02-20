@@ -1,0 +1,43 @@
+{% extends 'UserInterface/mats_view.html' %}
+
+{% block mats_list %}
+    <div class = "container">
+    <div class = "row">
+{% load staticfiles %}
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src= "http://www.situstudio.com/sites/default/files/newsite_makerspace163_0.jpg">
+              <span class="card-title">Maker Space</span>
+            </div>
+            <div class="card-content">
+              <p>Makerspaces, sometimes also referred to as hackerspaces, hackspaces, and fablabs are creative, DIY spaces where people can gather to create, invent, and learn. In libraries they often have 3D printers, software, electronics, craft and hardware supplies and tools, and more. - oedb.org</p>
+            </div>
+            <div class="card-action">
+              <a href="{{ mat.link }}">Let us know what you think</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        {% for mat in matlist %}
+        <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">{{ mat.title }}</span>
+            </div>
+            <div class="card-content">
+              <p>{{ mat.description }}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{ mat.link }}">Let us know what you think</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        {% endfor %}
+    </div>
+{% endblock %}

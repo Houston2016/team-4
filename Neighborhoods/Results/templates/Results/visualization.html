@@ -1,10 +1,16 @@
 <html>
 <head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 <script src="http://code.highcharts.com/highcharts.js"></script>
 
 <script type="text/javascript">
+
 
 function parseData() {
     var data = [[6, 5.0], [17, 4.0], [13, 3.6], [12, 3.3], [5, 2.7], [4, 2.4], [18, 2.0]];  // This should be an input later
@@ -53,8 +59,14 @@ function parseData() {
 </head>
 <body>
 
-<div id="container"></div>
-<button onclick="parseData()">Print the graph from input data</button>
+<div id="container">
+    <div class="row">
+        <div class="col s4">
+            <p>Here you can see the results for the rankings of the cards of each mat.</p>
+        </div>
+    </div>
+</div>
+<button class="btn" onclick="parseData()">Print the graph from input data</button>
 
 </body>
 </html>
