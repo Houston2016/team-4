@@ -1,0 +1,138 @@
+<html>
+<head>
+
+<style type="text/css">
+.card, .infocard {
+width:300px;height:300px;
+-webkit-border-radius: 38px;
+ -moz-border-radius: 38px;
+ border-radius: 38px;
+ border:1px solid #595959;
+ background-color:#DBDBDB;
+ -webkit-box-shadow: #B3B3B3 5px 5px 5px;
+ -moz-box-shadow: #B3B3B3 5px 5px 5px;
+  box-shadow: #B3B3B3 5px 5px 5px;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card a, .infocard a {
+margin-left: 30px;
+display: inline-block;
+margin-top: 30px;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+
+<script type="text/javascript">
+
+function runCards() {
+	var currentpage, preventpage;
+
+	//swipe left event
+	$(document).on('swipeleft', '.ui-page', function(event){ 
+	preventspin()
+	    if(event.handled !== true) // This will prevent event triggering more then once
+	    {    
+	        var nextpage = $.mobile.activePage.next('[data-role="page"]');
+	        // swipe using id of next page if exists
+	        
+	        if (nextpage.length > 0) {
+	            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+	        }
+	        event.handled = true;
+	    }
+	    return false;         
+	});
+
+	//swiperight event
+	$(document).on('swiperight', '.ui-page', function(event){ 
+	preventspin()    
+	    if(event.handled !== true) // This will prevent event triggering more then once
+	    {      
+	        var prevpage = $(this).prev('[data-role="page"]');
+	        if (prevpage.length > 0) {
+	            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+	        }
+	        event.handled = true;
+	    }
+	    return false;            
+	});
+
+	//tap event
+	$(document).on("tap", ".card", function (event){
+	  if (preventpage == 0) {
+	   currentpage = $(this).parent().attr("id");
+	    
+	//create the info card and display it   
+	$("body").append('<div data-role="page" id="infocard"><div class="infocard"><a class="info-card">This is info for '+currentpage+' Tap again to flip the card back</a></div></div>');
+	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#infocard", { transition: "flip"}) 
+	  }  
+	});
+
+	//tap event for info card. goes back to the card
+	$(document).on("tap", ".infocard", function (event){
+	$( ":mobile-pagecontainer" ).pagecontainer( "change", "#"+currentpage, { transition: "flip", reverse: true })
+	setTimeout(function() {
+	$("#infocard").remove()
+	}, 500);
+	 });
+}
+
+//one way to distinguish the difference between tap and swipe, usualy is preventDefault ot stoPropagation methods but they didnt work in this demo.
+function preventspin() {
+ preventpage = 1;
+setTimeout(function() {
+preventpage = 0;
+}, 500);
+}
+
+
+
+// MY FUNCTIONS:
+
+// sample_cards = {1: "Auto Shop", 2: "CS Education", 3: "Computer Lab"}
+
+// function generateCards(cards) {
+
+// 	$("#cards").append("<div data-role='page' id='card5'><div class='card'><a>CARD 5</a> </div></div>");
+
+// }
+
+</script>
+
+</head>
+
+<body onload="runCards()">
+
+<div id="cards">
+
+<div data-role="page" id="card1">
+    <div class="card"><a>Computer Science Class</a> </div>   
+</div>
+
+<div data-role="page" id="card2">
+    <div class="card"><a>Homework Workspace</a> </div>   
+</div>
+
+<div data-role="page" id="card3">
+    <div class="card"><a>Meditation Room</a> </div>   
+</div>
+
+<div data-role="page" id="card4">
+    <div class="card"><a>Coffee Shop</a> </div>   
+</div>
+
+
+
+</div>
+
+</body>
+</html>
