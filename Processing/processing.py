@@ -1,5 +1,4 @@
-import json
-from collections import defaultdict
+import collections
 
 def card_rank(input_json):
     '''
@@ -19,10 +18,10 @@ def card_rank(input_json):
 
         for mat in mat_dict.keys():
             # print 'Mat: ', mat
-            mat_data[mat] = defaultdict(list)
+            mat_data[mat] = collections.defaultdict(list)
 
     #Reorganize data into output dictionary
-    for user in input_json.keys()
+    for user in input_json.keys():
         print 'user: ', user
         mat_dict = input_json[user]
 
@@ -58,7 +57,7 @@ def sort_data(data):
     a dictionary mapping mat ids to a list of tuples containing
     the card name and average rank in descending order
     """
-    mat_to_card_ranking = defaultdict(list)
+    mat_to_card_ranking = collections.defaultdict(list)
 
     for mat_id, mat in data.items():
         for card, ranks in mat.items():
@@ -74,3 +73,8 @@ def sort_data(data):
 test = {"123123": {"1": [1,2,3,4], "2":[5,5,5,5], "3":[1,1,1,2]}}
 print sort_data(test)
 
+# def process_data():
+#     mats = gather_mats()
+#     card_ranks = card_rank(mats)
+#     avg_ranks = sort_data(card_ranks)
+#     return avg_ranks
