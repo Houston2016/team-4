@@ -13,13 +13,16 @@ def sort_data(data):
     the card name and average rank in descending order
     """
     mat_to_card_ranking = defaultdict(list)
+
     for mat_id, mat in data.items():
         for card, ranks in mat.items():
             average_rank = float(sum(ranks))/len(ranks)
             mat_to_card_ranking[mat_id].append((card, average_rank))
+
     # Sorts the mat in descending order
     for mat_id, mat in mat_to_card_ranking.items():
         mat.sort(key=lambda tup: tup[1],reverse=True)
+
     return mat_to_card_ranking
 
 test = {"123123": {"1": [1,2,3,4], "2":[5,5,5,5], "3":[1,1,1,2]}}
