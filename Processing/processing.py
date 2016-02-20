@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 import json
-import collections
+from collections import defaultdict
 
 def card_rank(input_json):
     '''
@@ -20,7 +19,7 @@ def card_rank(input_json):
 
         for mat in mat_dict.keys():
             # print 'Mat: ', mat
-            mat_data[mat] = collections.defaultdict(list)
+            mat_data[mat] = defaultdict(list)
 
     #Reorganize data into output dictionary
     for user in input_json.keys()
@@ -46,7 +45,6 @@ print card_rank(input_json)
 
 
 
-from collections import defaultdict
 def sort_data(data):
     """
     Sorts the data so that it can be visualized
